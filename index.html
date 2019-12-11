@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Browser Object Model</title>
+    <script defer src="./assets/js/index.js"></script>
+
+    <style>
+        body{
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+        }
+
+        .rangeWrapper{
+            min-width: 320px;
+            box-sizing: border-box;
+            border: 30px solid gold;
+            background-color: gray;
+            color: #3e3e3e;
+        }
+
+        label{
+            display: flex;
+        }
+
+        label input[type="range"]{
+
+                flex: 1;
+
+        }
+        label span{
+            flex-basis: 40px;
+            flex-grow: 0.2;
+            max-width: 100px;
+        }
+
+
+    </style>
+
+
+</head>
+<body>
+
+
+<div class="rangeWrapper">
+    <label>
+        <span>RED</span>
+        <input type="range" min="0" max="255" step="1">
+    </label>
+    <label>
+        <span>GREEN</span>
+        <input type="range" min="0" max="255" step="1">
+    </label>
+    <label>
+        <span>BLUE</span>
+        <input type="range" min="0" max="255" step="1">
+    </label>
+    <label>
+        <span>ALPHA</span>
+        <input type="range" min="0" max="1" step="0.01">
+    </label>
+</div>
+</body>
+</html>
